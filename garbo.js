@@ -32,3 +32,20 @@ $(document).ready(function(){
         $(".why-us-sub-4").slideToggle(1000);
     });
 });
+
+
+(function($) {
+    "use strict";
+
+    // scrolling morbido
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    
+
+})(jQuery); 

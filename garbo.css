@@ -37,6 +37,54 @@ p  {
     text-align: center;
 }
 
+.btn-xl {
+  color: white;
+  background-color: #f7d545;
+  border-color: #fed136;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 200px;
+  font-size: 25px;
+  padding: 20px 40px;
+}
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  color: white;
+  background-color: #f7d545;
+  border-color: #f6bf01;
+}
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  background-image: none;
+}
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+  background-color: #f7d545;
+  border-color: #f7d545;
+}
+
+.btn-xl .badge {
+  color: #f7d545;
+  background-color: white;
+}
+
 
 
 
@@ -147,7 +195,10 @@ p  {
     background-position: center;
 }
 
-
+.page-scroll {
+    position: relative;
+    top: 200px;
+}
 /*   WHY US   */
 
 
