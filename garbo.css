@@ -1,0 +1,389 @@
+/*   Luca GARBO  */
+/*  // G - D P design   */
+
+/*   GENERAL   */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.responsive-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h1 {
+    font-size:2em;
+}
+
+h1, h2, h3, h4, h5, h6, a, li  {
+    font-family: "Rubik", "Helvetica", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li {
+    font-size:0.8em;
+}
+
+p  {
+    font-size: 1em;
+    font-family: "Helvetica", Arial, sans-serif;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+
+
+/*             */
+
+/*   NAV   */
+
+.nav {
+    position: fixed;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    z-index: 1001;
+}
+
+.nav-blur {
+    z-index: 1000;
+    -webkit-filter: blur(2px);
+	filter: blur(2px);
+}
+
+.nav .nav-brand {
+    display: inline-block;
+    max-width: 300px;
+    margin-left: 50px;
+}
+
+.nav .nav-menu {
+    position: relative;
+    display: inline-block;
+    max-width: 800px;
+    float: right;
+    margin-right: 50px;
+    top: 20px;
+}
+
+.nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.nav hr {
+    color: fff;
+    background-color: #fff;
+}
+
+.nav-menu .responsive-menu-icon {
+    display: none;
+}
+
+.nav-menu .responsive-menu-icon a {
+    font-size: 30px;
+}
+
+@media screen and (max-width:680px) {
+    
+  .nav-menu li {display: none;}
+    
+  .responsive {
+      width:100%;
+      padding-bottom: 40px;
+      margin-top: -76px;
+  }
+    
+  .nav-menu .responsive-menu-icon {
+    float: right;
+    display: inline-block;
+      
+    margin-top: -10px;
+  }
+      
+  
+  .responsive .responsive-menu-icon {
+    
+  }
+  .responsive li {
+      float: right;
+    display: block;
+      width: 100%;
+      margin-top: 20px;
+  }
+  .responsive li a {
+    display: block;
+    text-align: right;
+  }
+
+}
+
+/*   HEADER    */
+
+
+.header-home {
+    height: 900px;
+    background-image: url(images/slider-header/slider-1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*   WHY US   */
+
+
+.why-us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    padding-right: 7%;
+    padding-left: 3%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.why-us-container {
+    display: inline-block;
+    float: right;
+    width:20%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.why-us-photo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    /*-webkit-filter: blur(3px);
+	filter: blur(3px);*/
+    transition:opacity 1s linear;
+    opacity: 0.8;  
+}
+
+.why-us .why-us-sub {
+    position: relative;
+}
+
+.why-us-sub-1 {
+    position: relative;
+    display: none;
+    height: 250px;
+}
+
+.why-us-sub-2 {
+    position: relative;
+    display: none;
+    height: 250px;
+}
+
+.why-us-sub-3 {
+    position: relative;
+    display: none;
+    height: 250px;
+}
+
+.why-us-sub-4 {
+    position: relative;
+    display: none;
+    height: 250px;
+}
+
+
+.why-us-photo:hover {
+    opacity: 1;
+}
+
+.why-us-photo-1 {
+    background-image: url(images/why-us/1.jpg);
+}
+
+/*   CONTATTI   */
+
+.footer {
+    height: 500px;
+}
+
+.footer iframe {
+     width: 100%; 
+    height: 350; 
+    border:0; 
+}
+
+.contatti-dati {
+    width: 50%;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 502px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}

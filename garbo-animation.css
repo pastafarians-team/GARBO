@@ -1,0 +1,37 @@
+/*----drop----*/
+
+-moz-@keyframes drop {
+    0%   {transform:scale(1);}
+    10%   {transform:scale(0.6);}
+    25%  {transform:scale(1.2);}
+    50%  {transform:scale(0.8);}
+    100% {transform:scale(1);}  
+}
+
+-webkit-@keyframes drop {
+    0%   {transform:scale(1);}
+    10%   {transform:scale(0.6);}
+    25%  {transform:scale(1.2);}
+    50%  {transform:scale(0.8);}
+    100% {transform:scale(1);}   
+}
+
+@keyframes drop {
+    0%   {transform:scale(1);}
+    10%   {transform:scale(0.6);}
+    25%  {transform:scale(1.2);}
+    50%  {transform:scale(0.8);}
+    100% {transform:scale(1);}   
+}
+
+.drop:hover {
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-duration: 2s;
+    
+    -webkit-animation-name: drop;
+    animation-name: drop;
+    
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+

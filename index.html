@@ -1,0 +1,150 @@
+<html lang="it">
+    <head>
+        
+        <!--- Metatag --->
+        <title>GARBO assistenza caldaie</title>
+        <meta name="description" content="Luca GARBO assistenza caldaie">
+
+        <!--- Responsive --->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <!--- Font --->
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i" rel="stylesheet"> 
+        
+        <!--- Animate.css --->
+        <link href="animate.min.css">
+        <link href="animate.css">
+        
+        <!--css-->
+        <link rel="stylesheet" href="palette.css"/>
+        <link rel="stylesheet" href="garbo-animation.css"/>
+        <link rel="stylesheet" href="garbo.css"/>
+            
+        <!--script-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="garbo.js"></script>
+        
+        <!--favicon-->
+        <link rel="icon" href="img/GARBO-favicon.png" />
+        
+    </head>
+
+    <body>
+        
+        <!--NAV-->
+        <nav class="nav">
+                <h1 class="nav-brand"><a href="#top">GARBO</a></h1>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="responsive-menu-icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">☰</a>
+                    </li>
+                    <li>
+                        <a href="#why-us">sceglierci</a>
+                    </li>
+                    <li>
+                        <a href="#why-us">assistenza</a>
+                    </li>
+                    <li>
+                        <a href="#why-us">contatti</a>
+                    </li>
+                    
+                </ul>
+            
+            
+            
+            <hr/>
+        </nav>
+        
+        <!--end NAV-->
+        
+        <!--HEADER-->
+        <header class="header header-home default-primary-color" id="top">
+        </header>
+        <!--end HEADER-->
+        
+        <!--WHY US-->
+        <section class="why-us light-primary-color">
+            <div class="why-us-container">
+                <img class="why-us-photo why-us-photo-1 responsive-img drop" src="images/why-us/1.jpg"/>
+                <div class="why-us-sub why-us-sub-1 dark-primary-color">
+                    <h3>professionalità</h3>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                </div>
+            </div>
+            <div class="why-us-container">
+                <img class="why-us-photo why-us-photo-2 responsive-img drop" src="images/why-us/2.jpg"/>
+                <div class="why-us-sub why-us-sub-2 dark-primary-color">
+                    <h3>velocità</h3>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                </div>
+            </div>
+            <div class="why-us-container">
+                <img class="why-us-photo why-us-photo-3 responsive-img drop" src="images/why-us/3.jpg"/>
+                <div class="why-us-sub why-us-sub-3 dark-primary-color">
+                    <h3>competenza</h3>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                </div>
+            </div>
+            <div class="why-us-container">
+                <img class="why-us-photo why-us-photo-4 responsive-img drop" src="images/why-us/4.jpg"/>
+                <div class="why-us-sub why-us-sub-4 dark-primary-color">
+                    <h3>affidabilità</h3>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                </div>
+            </div>
+        </section>
+        <!--end WHY US-->
+        
+        <!--CONTATTI-->
+        
+        <footer class="footer dark-primary-color ">
+            <div class="contatti-container">
+                <div class="contatti-dati">
+                    <p>telefono<strong> 335 7562899</strong></p>
+                </div>
+                <div class="contatti-form">
+                    <form id="form" class="topBefore"  method="post" action="mailto:gaiadalpoz@gmail.com" >
+		
+                          <input id="name" type="text" placeholder="NOME">
+                          <input id="email" type="text" placeholder="E-MAIL">
+                          <textarea id="message" type="text" placeholder="MESSAGGIO"></textarea>
+                        <input id="submit" type="submit" value="Send"><a href="mailto:gaiadalpoz@gmail.com">INVIA</a>
+  
+                    </form>
+                    
+                    <form id="form"  action="contact.php" method="post" class="contact-form">
+                          <div class="field name-box">
+                                <input type="text" name="cf_name" id="name" placeholder="Who Are You?"/>
+                                <label for="name">Name</label>
+                                <span class="ss-icon">check</span>
+                          </div>
+
+                          <div class="field email-box">
+                                <input type="text" name="cf_email" id="email" placeholder="name@email.com"/>
+                                <label for="email">Email</label>
+                                <span class="ss-icon">check</span>
+                          </div>
+
+                          <div class="field msg-box">
+                                <textarea id="msg" name="cf_message" rows="4" placeholder="Your message goes here..."/></textarea>
+                                <label for="msg">Msg</label>
+                                <span class="ss-icon">check</span>
+                          </div>
+
+                          <input class="button" type="submit" value="Send" />
+                  </form>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2769.8860760692864!2d12.529433315270465!3d46.03342170330174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4779711353548b6b%3A0xf30608c4cb9e256c!2sVia+Lachin%2C+41%2C+33070+Budoia+PN%2C+Italia!5e0!3m2!1sit!2ses!4v1487519221396" allowfullscreen></iframe>
+            
+        </footer>
+        <!--end CONTATTI-->
+        
+    </body>
+</html>
